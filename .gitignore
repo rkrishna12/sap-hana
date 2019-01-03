@@ -13,3 +13,4 @@
 
 # ignore ansible retry files
 *.retry
+deploy/vm/ansible/roles/webide-install/tasks/main.yml_old
