@@ -39,10 +39,10 @@
     executable: /bin/bash
     chdir: "/usr/sap/{{ sap_sid|upper }}/HDB{{ sap_instancenum }}"
 
-- name: Get WEBIDE URL
+- name: Get WebIDE URL
   shell: |
     . ~/.bashrc
     xs app webide --urls
-  register: shineui_url
+  register: webide_url
   args:
     executable: /bin/bash
