@@ -31,7 +31,7 @@
     executable: /bin/bash
     chdir: "/usr/sap/{{ sap_sid|upper }}/HDB{{ sap_instancenum }}"
 
-- name: Install WEBIDE
+- name: Install WebIDE
   shell: |
     . ~/.bashrc
     xs install XSAWEBIDE.ZIP -e XSAWEBIDE.mtaext
