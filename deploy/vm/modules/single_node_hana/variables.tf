@@ -54,7 +54,7 @@ variable "install_xsa" {
 }
 
 variable "install_webide" {
-  description = "Flag that determines whether to install Webide on the host"
+  description = "Flag that determines whether to install WebIDE on the host"
   default     = false
 }
 
@@ -191,12 +191,12 @@ variable "url_xsa_runtime" {
 }
 
 variable "url_xsa_hrtt" {
-  description = "URL for hrtt"
+  description = "URL for HRTT"
   default     = ""
 }
 
 variable "url_xsa_webide" {
-  description = "URL for webide"
+  description = "URL for WebIDE"
   default     = ""
 }
 
