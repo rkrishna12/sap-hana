@@ -207,12 +207,12 @@ variable "url_xsa_runtime" {
 }
 
 variable "url_xsa_hrtt" {
-  description = "URL for hrtt"
+  description = "URL for HRTT"
   default     = ""
 }
 
 variable "url_xsa_webide" {
-  description = "URL for webide"
+  description = "URL for WebIDE"
   default     = ""
 }
 
