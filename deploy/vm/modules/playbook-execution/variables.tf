@@ -31,7 +31,7 @@ variable "install_xsa" {
 }
 
 variable "install_webide" {
-  description = "Flag that determines whether to install Webide on the host"
+  description = "Flag that determines whether to install WebIDE on the host"
   default     = false
 }
 
