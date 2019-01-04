@@ -153,7 +153,7 @@ variable "url_xsa_runtime" {
 }
 
 variable "url_xsa_hrtt" {
-  description = "URL for hrtt"
+  description = "URL for HRTT"
   default     = ""
 }
 
