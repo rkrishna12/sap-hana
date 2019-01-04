@@ -1,16 +1,16 @@
 ---
 # This role installs and configures WEBIDE on top of an existing XSA instance
-- name: Download HRTT Content (XSA)
+- name: Download HRTT
   get_url:
     url: "{{ url_xsa_hrtt }}"
     dest: /usr/sap/{{ sap_sid|upper }}/HDB{{ sap_instancenum }}/XSAHRTT.ZIP
 
-- name: Download WEBIDE Content (XSA)
+- name: Download WebIDE
   get_url:
     url: "{{ url_xsa_webide }}"
     dest: /usr/sap/{{ sap_sid|upper }}/HDB{{ sap_instancenum }}/XSAWEBIDE.ZIP
 
-- name: Download MTA TXT
+- name: Download MTA EXT
   get_url:
     url: "{{ url_xsa_mta }}"
     dest: /usr/sap/{{ sap_sid|upper }}/HDB{{ sap_instancenum }}/XSAWEBIDE.mtaext
