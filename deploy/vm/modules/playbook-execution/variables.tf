@@ -158,7 +158,7 @@ variable "url_xsa_hrtt" {
 }
 
 variable "url_xsa_webide" {
-  description = "URL for webide"
+  description = "URL for WebIDE"
   default     = ""
 }
 
