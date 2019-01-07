@@ -4,7 +4,8 @@
   get_url:
     url: "{{ url_xsa_hrtt }}"
     dest: /usr/sap/{{ sap_sid|upper }}/HDB{{ sap_instancenum }}/XSAHRTT.ZIP
-
+  when: install_cockpit == false
+  
 - name: Download WebIDE
   get_url:
     url: "{{ url_xsa_webide }}"
@@ -30,6 +31,7 @@
   args:
     executable: /bin/bash
     chdir: "/usr/sap/{{ sap_sid|upper }}/HDB{{ sap_instancenum }}"
+  when: install_cockpit == false
 
 - name: Install WebIDE
   shell: |
